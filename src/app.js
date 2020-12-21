@@ -26,14 +26,14 @@ app.use(express.static(publicDirectoryPath));
 app.get("", (req, res) => {
   res.render("index", {
     title: "Weather App",
-    user: "Tom Hardy",
+    user: "Bishal Gurung",
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "About Me",
-    user: "Tom Hardy",
+    user: "Bishal Gurung",
   });
 });
 
@@ -41,7 +41,7 @@ app.get("/help", (req, res) => {
   res.render("help", {
     text: "This is some help text",
     title: "Help text",
-    user: "Tom Hardy",
+    user: "Bishal Gurung",
   });
 });
 
