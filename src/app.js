@@ -8,6 +8,7 @@ const { query } = require("express");
 console.log(__dirname);
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 //Define path for express config
 const publicDirectoryPath = path.join(__dirname, "../public");
@@ -98,6 +99,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("The node js server is up and running");
+app.listen(port, () => {
+  console.log("The node js server is up and running" + port);
 });
